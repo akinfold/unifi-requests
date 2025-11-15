@@ -9,7 +9,7 @@ Minimalistic Ubiquiti Unifi controller API client which takes care of authentica
 >>> import json
 >>> import requests
 >>> from unifi_requests.auth import UnifiControllerAuth
->>> auth = UnifiControllerAuth('https://192.168.1.1', 'your_username', 'your_password')
+>>> auth = UnifiControllerAuth('your_username', 'your_password', 'https://192.168.1.1')
 >>> resp = requests.get('https://192.168.1.1/proxy/network/v2/api/site/default/trafficroutes', verify=False, auth=auth)
 >>> print(json.dumps(resp.json(), indent=4))
 [
@@ -76,7 +76,7 @@ Minimalistic Ubiquiti Unifi controller API client which takes care of authentica
 >>> import requests
 >>> from unifi_requests.auth import UnifiControllerAuth
 >>> s = requests.Session()
->>> s.auth = UnifiControllerAuth('https://192.168.1.1', 'your_username', 'your_password')
+>>> s.auth = UnifiControllerAuth('your_username', 'your_password', 'https://192.168.1.1')
 >>> resp = s.get('https://192.168.1.1/proxy/network/v2/api/site/default/trafficroutes', verify=False)
 >>> rules = resp.json()
 >>> updated_rule = rules[0]
