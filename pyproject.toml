@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "requests-unifi-auth"
+version = "0.1.0"
+description = "Ubiquiti Unifi Controller API authorization class for python requests library. Takes care of authentification and CSRF handling."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Roman Akinfeev", email = "akinfold@gmail.com" }]
+keywords = ["unifi", "ubiquiti", "api", "networking", "controller", "requests"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = ["requests>=2.25"]
+
+[project.urls]
+Homepage = "https://github.com/akinfold/requests-unifi-auth"
+Source = "https://github.com/akinfold/requests-unifi-auth"
+
+[tool.setuptools.packages.find]
+where = ["src"]
