@@ -1,6 +1,12 @@
 # requests-unifi-auth
 
-Ubiquiti Unifi Controller API authorization class for python requests library. Takes care of authentification and CSRF handling. 
+Ubiquiti Unifi Controller API authorization class for python requests library. Takes care of authentification and CSRF handling.
+
+## Installation
+
+```bash
+pip install requests-unifi-auth
+```
 
 ## Examples
 
